@@ -1,0 +1,27 @@
+{
+  "name": "manasbala/symfony-form-error-to-array",
+  "type": "library",
+  "description": "A service to transform symfony 3 form error to array",
+  "homepage": "https://github.com/manasbala/symfony-form-error-to-array",
+  "keywords": ["symfony 3 form error", "symfony form error array", "form error array"],
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "Manas Bala",
+      "email": "manas.du@gmail.com",
+      "role": "Developer"
+    }
+  ],
+  "require": {
+    "php": ">=5.3.0"
+  },
+  "require-dev": {
+    "phpunit/phpunit": "3.7.*"
+  },
+  "autoload": {
+    "psr-4": {
+      "MB\\SymfonyFormErrorToArrayBundle\\": ""
+    }
+  },
+  "minimum-stability": "dev"
+}

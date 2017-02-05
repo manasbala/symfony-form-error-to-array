@@ -1,0 +1,6 @@
+services:
+#    mb_symfony_form_error_to_array.example:
+#        class: MB\SymfonyFormErrorToArrayBundle\Example
+#        arguments: ["@service_id", "plain_value", "%parameter%"]
+    mb_symfony_form_error_to_array:
+        class: MB\SymfonyFormErrorToArrayBundle\Service\FormErrorToArray
