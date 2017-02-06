@@ -19,7 +19,10 @@ class FormErrorToArray
         $fields = $this->getFormFields($form);
 
         foreach ($fields as $name => $val) {
-            $fields[$name] = (string) $form[$name]->getErrors();
+            $error = (string) $form[$name]->getErrors();
+            if (!empty($error)) {
+                $fields[$name] = $error;
+            }
         }
 
         return $fields;
