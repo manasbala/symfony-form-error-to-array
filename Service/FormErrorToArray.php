@@ -19,7 +19,7 @@ class FormErrorToArray
         $fields = $this->getFormFields($form);
 
         foreach ($fields as $name => $val) {
-            $fields[$name] = $form[$name]->getErrors();
+            $fields[$name] = (string) $form[$name]->getErrors();
         }
 
         return $fields;
@@ -33,5 +33,7 @@ class FormErrorToArray
         foreach ($form->all() as $item) {
             $formFields[$item->getName()] = '';
         }
+
+        return $formFields;
     }
 }
